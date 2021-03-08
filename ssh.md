@@ -15,7 +15,6 @@ ssh -options [用户名]@[ip地址]
 
 
 #### options
-
 - -p <port> 在指定的端口连接ssh，有时服务器端可能ssh默认端口被改变，不再是port22
 - -C 压缩，当带宽比较小时候用，占用一些cpu
 - -v 调试模式
@@ -37,3 +36,6 @@ ssh -options [用户名]@[ip地址]
 
 ssh完整option http://man.openbsd.org/ssh#T  
 关于正向代理，反向代理 https://juejin.cn/post/6844903782556368910
+
+#### ssh拷贝文件
+scp -r username@192.168.0.1:/home/username/remotefile.txt ～/
